@@ -1,0 +1,4 @@
+CONTAINER ID   IMAGE                                          COMMAND                  CREATED         STATUS                       PORTS                                                  NAMES
+47d12404b871   redis                                          "docker-entrypoint.s…"   3 minutes ago   Up 3 minutes                 6379/tcp                                               inspiring_einstein
+50e54b2e14f4   mysql                                          "docker-entrypoint.s…"   3 minutes ago   Exited (1) 3 minutes ago                                                            infallible_archimedes
+a26cac6637d1   nginx                                          "/docker-entrypoint.…"   3 minutes ago   Exited (127) 3 minutes ago                                                          loving_khayyam

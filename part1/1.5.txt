@@ -1,0 +1,4 @@
+devopsdockeruh/simple-web-service                                           ubuntu                                                             4e3362e907d5   12 months ago    83MB
+devopsdockeruh/simple-web-service                                           alpine                                                             fd312adc88e0   12 months ago    15.7MB
+
+Yes the same message is functional. Only that the tail ./text.log does not continue running after a while

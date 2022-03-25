@@ -1,0 +1,5 @@
+  990  docker container run --name web-service -d devopsdockeruh/simple-web-service:ubuntu
+  991  docker ps -a
+  992  docker exec -it web-service bash
+  tail -f ./text.log
+'You can find the source code here: https://github.com/docker-hy'

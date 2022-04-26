@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: "ml-frontend"
+    restart: always
+    ports: 
+      - '3000:3000'
+
+  backend:
+    image: "ml-backend"
+    restart: always
+    volumes: 
+      - models:/src/model  
+    ports: 
+      - '5000:5000'
+
+  training:
+    image: "ml-training"
+    restart: always
+    volumes: 
+      - models:/src/model
+      - ./imgs:/src/imgs
+      - ./data:/src/data
+
+volumes: 
+  models:

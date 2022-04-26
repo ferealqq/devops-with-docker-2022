@@ -1,0 +1,17 @@
+FROM golang:1.16
+
+WORKDIR /usr/src/app
+
+COPY ./example-backend .
+
+RUN go mod download && go mod verify
+
+ENV REQUEST_ORIGIN=http://localhost:5000
+ENV REDIS_HOST=cache 
+ENV POSTGRES_HOST=database
+
+RUN go build
+
+RUN chmod +x ./server
+
+CMD ["./server"]

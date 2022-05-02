@@ -11,13 +11,10 @@ ENV REDIS_HOST=cache
 ENV POSTGRES_HOST=database
 
 RUN go build
-
 RUN chmod +x ./server
 
-#RUN useradd -m appuser
+RUN useradd -m appuser
 
-#RUN chown -R appuser:appuser /usr/src/app/server
-
-#USER appuser
+USER appuser
 
 CMD ["./server"]

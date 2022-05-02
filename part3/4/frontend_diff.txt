@@ -1,0 +1,2 @@
+fro_before                                                                  latest                                                             75ca1394e2dd   55 minutes ago   1.22GB
+fro_after                                                                   latest                                                             d403ef89a15b   4 minutes ago       324MB

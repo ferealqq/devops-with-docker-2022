@@ -1,0 +1,14 @@
+FROM golang:1.16-alpine
+
+WORKDIR /usr/src/app
+
+COPY ./example-backend .
+
+ENV REQUEST_ORIGIN=http://localhost
+ENV REDIS_HOST=cache
+ENV POSTGRES_HOST=database
+
+RUN go build && \
+    find . \! -name 'server' -delete
+
+CMD ["./server"]
